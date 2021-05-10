@@ -1,0 +1,73 @@
+#video{
+    width:650px;
+    height: 450px;
+    position: absolute;
+    left: 350px;
+}
+#trailbtn
+{
+   text-decoration: none;
+   position: absolute;
+   top: 340px;
+   left: 380px;
+   background-color: white;
+   border-radius: 8px;
+   font-size: 20px;
+   font-weight: bold;
+   color: black;
+   cursor: pointer;
+   padding: 10px;
+}
+#movie
+{
+  position: relative;
+  top:200px;
+}
+#trailer
+{
+    position: absolute;
+    top:50px;
+    left: 390px;
+    font-family:ui-sans-serif;
+    letter-spacing:2px;
+    color:gray;
+    font-size:20px;
+}
+
+#login
+{
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(8, 201, 8);
+}
+#login a:visited
+{
+    color: black;
+}
+.list
+{
+    top:450px;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    right:10px;
+    left:10px;
+}
+.element
+{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    padding: 10px;
+    cursor:pointer;
+    transition: all 0.4s;
+}
+.element:hover
+{
+    width: 240px;
+    height: 290px;
+    top:-10px;
+}

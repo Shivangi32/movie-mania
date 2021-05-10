@@ -1,0 +1,56 @@
+#menudiv
+{
+    position: relative;
+}
+#drop
+{
+    position: absolute;
+    background-color: rgb(30, 211, 24);
+    list-style: none;
+    width: 150px;
+    visibility: hidden;
+    top:60px;
+    border-radius: 10px;
+}
+#drop li{
+    margin-left: -32px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#drop li a:hover{
+    color:greenyellow;
+}
+#drop li:hover
+{
+    background-color: rgb(226, 43, 43);
+}
+#btn
+{
+     border-radius: 10px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+     font-size: 20px;
+     font-weight: bold;
+     width: 170px;
+     border:none;
+     height: 50px;
+     transition: background-color 0.5s;
+}
+#drop.active
+{
+    visibility: visible;
+}
+#btn:hover
+{
+     border-radius: 10px;
+     background-color: yellow;
+     color: green;
+     cursor: pointer;
+     font-size: 20px;
+     width: 180px;
+     padding: 10px;
+     height: 50px;
+}

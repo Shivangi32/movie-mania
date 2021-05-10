@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="C:\Users\DELL\Documents\web dev\join.css">
+  </head>
+<body >
+    <div class="nav">
+        <img class="logo" src="logo.jpg">
+        <a href="C:\Users\DELL\Documents\web dev\project.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://www.zee5.com/movies">Movie Online</a>
+        <a href="https://www.popcornflix.com/pages/discover/d/tv-shows">TV shows</a>
+    </div>
+    
+    <div class="res">
+      <h1>Verification form </h1>
+      Your response has been recorded!
+      <a href="join.html">Submit another response </a>
+      
+    </div>
+</body>
+</html>

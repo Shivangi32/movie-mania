@@ -1,0 +1,113 @@
+.logo
+ {
+     height: 100px;
+     width: 100px;
+     margin-top: 30px;
+     margin-left: 70px;
+ }
+body{
+    background-image: url("sign.jpg");
+    background-size: 100%;
+    font-size: 20px;
+    font-family: "comic sans ms";
+    color: white;
+}
+.box
+{
+    margin-left: 450px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 450px;
+    text-align: center;
+    border-radius: 7px;
+    align-items: center;
+}
+.box input
+{
+    width: 300px;
+    font-size: medium;
+    height: 30px;
+    padding: 5px;
+    color: black;
+    border: green;
+    border-radius: 5px;
+}
+.box button
+{
+    width: 200px;
+    font-size: medium;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+.control{
+    position: relative;
+}
+.control i
+{
+    position: absolute;
+    left:350px;
+    top:12px;
+    visibility: hidden;
+}
+#check,#checkp
+{
+    color:green;
+}
+#exclamation,#exclamationp
+{
+    color: red;
+}
+.control small
+{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    visibility: hidden;
+    color:red;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+a:visited
+{
+  color:white;
+}
+.social
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    cursor:pointer;
+    margin-left: 110px;
+}
+.social li
+{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: rgba(9, 19, 8, 0.623);
+    line-height: 40px;   
+    border: rgb(0, 195, 255);
+}
+.social li:hover
+{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+.social a:link
+{
+    color: white;
+}
+.social a:hover
+{
+    color:rgb(0, 217, 255);
+}

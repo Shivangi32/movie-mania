@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<div class="name">
+       <marquee> MOVIE MANIA</marquee>
+    </div>
+   
+    <div class="nav">
+      <img class="logo" src="logo.jpg">
+      <a href="project.html" class="nava">HOME</a>
+      <a href="movie.html" class="nava" target="_blank">MOVIE ONLINE</a>
+      <a href="https://in.bookmyshow.com/explore/movies-delhi" class="nava" target="_blank">BUY TICKETS</a></li>
+      <a href="https://www.popcornflix.com/pages/discover/d/tv-shows" class="nava">TV SHOWS</a>
+      <button id="contact"><a href="contact.html">CONTACT US</a></button>
+  </div>
+        <br>
+  <form class="form" method="post" action="vercon.html" onsubmit="return check()"> 
+      <h1>CONTACT US</h1>
+      <label for="name">NAME:</label><br>
+      <input type="text" id="name" placeholder="First Name" required>&emsp;&emsp;
+      <input type="text" placeholder="Last Name"><br><br>
+      <label for="email">EMAIL ADDRESS:</label><br>
+      <input type="email" id="email" placeholder="Eg-: abc@gmail.com" required> <br><br>
+      <label for="msg">MESSAGE:</label><br>
+      <input type="text" id="msg" placeholder="Please enter your comments" id="msg"><br><br>
+      <button onclick="check()">SUBMIT</button>
+  </form>
+</body>
+</html>
