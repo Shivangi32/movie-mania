@@ -1,7 +1,7 @@
+var em=document.getElementById("e").value;
+var pass=document.getElementById("p").value;
 function check()
 {
-    var em=document.getElementById("e").value;
-    var pass=document.getElementById("p").value;
     if(em=="" || em==null)
     {
         document.getElementById("check").style.visibility = "hidden";
@@ -69,5 +69,6 @@ function check()
             document.getElementById("errorp").style.color="green";
             document.getElementById("errorp").style.visibility = "visible";
           }
+        
     }
 }
