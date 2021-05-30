@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="join.css">
+  </head>
+<body >
+    <div class="nav">
+        <img class="logo" src="logo.jpg">
+        <a href="project.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="movie.html">Movie Online</a>
+        <a href="https://www.popcornflix.com/pages/discover/d/tv-shows">TV shows</a>
+    </div>
+    <form class="form" method="post" action="response.html"> 
+        <h1>JOIN US</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="First Name" required>&emsp;&emsp;
+        <input type="text" placeholder="Last Name"><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="Eg-: abc@gmail.com" required> <br><br>
+        <label for="age" >Age:</label><br>
+        <input type="number" id="age"required><br><br>
+        <label for="gender">Gender:</label><br>
+        Female <input type="radio" id="gender" name="genderchoice">
+        Male <input type="radio" id="gender" name="genderchoice"><br><br>
+        <label for="no" >Contact No:</label><br>
+        <input type="text" id="no"><br><br>
+        <label for="date">Date of Birth:</label><br>
+        <input type="date" id="date"><br><br>
+        <label for="user">User Name:</label>&emsp;
+        <input type="text" id="user" required><br><br>
+        <label for="pass">Password:</label>&emsp;&emsp;
+        <input type="password" id="pass"required minlength="8"><br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
