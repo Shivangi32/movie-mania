@@ -5,6 +5,11 @@
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
  }
+
+#searchform{
+    width:10vw;
+    display: inline;
+}
 #login
 {
     margin-left: 15vw;
