@@ -49,8 +49,6 @@
 }
 .list
 {
-    top:450px;
-    position: relative;
     justify-content: space-around;
     display: flex;
     right:10px;
