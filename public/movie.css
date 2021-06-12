@@ -47,6 +47,19 @@
 {
     color: black;
 }
+h1{
+    width:12vw;
+    color: wheat;
+    margin-left: 4vw;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 0.2vw;
+    font-size: 2.2vw;
+    border-radius: 1vw;
+}
+#main{
+    position: relative;
+    top:450px;
+}
 .list
 {
     justify-content: space-around;

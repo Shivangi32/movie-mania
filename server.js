@@ -3,7 +3,7 @@ var app=express();
 
 app.use(express.static("public"));
 app.get("/",(req,res)=>{
-    res.sendFile("project.html");
+    res.sendFile(__dirname+"\\public\\project.html");
 })
 
 var list=["saina","end game","conjuring","dear comrade"];
