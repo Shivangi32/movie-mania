@@ -30,6 +30,9 @@
     height: 36vw;
     margin-left: 16vw;
 }
+#prev,#next{
+    margin-top: 17vw;
+}
 .name
  {
    background-color: blue;

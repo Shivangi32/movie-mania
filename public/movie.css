@@ -18,10 +18,24 @@
    cursor: pointer;
    padding: 10px;
 }
+#prev{
+    left: 1vw;
+    top: 9vw;
+    background-color: black;
+    width: 4vw;
+    height: 3vw;
+  }
+#next{
+    right: -1vw;
+    top: 9vw;
+    background-color: black;
+    width: 4vw;
+    height: 3vw;
+ }
 #movie
 {
   position: relative;
-  top:200px;
+  top:12vw;
 }
 #trailer
 {

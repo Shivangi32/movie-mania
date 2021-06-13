@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .nava:hover{
+            width: 11vw;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="dropdown.css">
 </head>
 <body>
 <div class="name">
@@ -9,13 +15,30 @@
     </div>
    
     <div class="nav">
-      <img class="logo" src="logo.jpg">
-      <a href="project.html" class="nava">HOME</a>
-      <a href="movie.html" class="nava" target="_blank">MOVIE ONLINE</a>
-      <a href="https://in.bookmyshow.com/explore/movies-delhi" class="nava" target="_blank">BUY TICKETS</a></li>
-      <a href="https://www.popcornflix.com/pages/discover/d/tv-shows" class="nava">TV SHOWS</a>
-      <button id="contact"><a href="contact.html">CONTACT US</a></button>
-  </div>
+        <img class="logo" src="logo.jpg">
+        <a href="project.html" class="nava">HOME</a>
+        <div id="menudiv">
+          <button id="btn">MOVIE ONLINE</button>
+          <ul id="drop">
+              <li><a href="hindi.html">Hindi</a></li>
+              <li><a href="english.html">English</a></li>
+              <li><a href="kids.html">Kids</a></li>
+              <li><a href="horror.html">Horror</a></li>
+              <li><a href="tamil.html">Tamil</a></li>
+          </ul>
+          <script type="text/javascript">
+            var d=document.getElementById("drop");
+            var btn=document.getElementById("btn");
+                btn.addEventListener("click",function f() 
+                {
+                    d.classList.toggle("active");
+                });
+            </script>
+        </div>
+        <a href="https://in.bookmyshow.com/explore/movies-delhi" class="buy" target="_blank">BUY TICKETS</a></li>
+        <a href="tv.html" class="buy">TV SHOWS</a>
+        <button id="contact"><a href="contact.html">CONTACT US</a></button>
+    </div>
         <br>
   <form class="form" method="post" action="vercon.html" onsubmit="return check()"> 
       <h1>CONTACT US</h1>

@@ -4,6 +4,9 @@
     <link rel="stylesheet" type="text/css" href="contact.css">
     <link rel="stylesheet" type="text/css" href="movie.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="name">
@@ -30,14 +33,40 @@
 <div id="trailer"> TRAILER</div>
 <button id="trailbtn">Watch Movie</button>
 <div id="main">
-<div class="list">
-  <div class="element"><img src="DORA.jpg" class="element"></div>
-  <div class="element"><img src="finest.jpg" class="element"></div>
-  <div class="element"><img src="conjuring.jfif" class="element"></div>
-  <div class="element"><img src="fast.jfif" class="element"></div>
-  <div class="element"><img src="man of steel.jpg" class="element"></div>
+  <h1>Popular</h1>
+  
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner"> 
+      <div class="carousel-item active">
+        <div class="list">
+          <div class="element"><img src="tanhaji.jpg" class="element"></div>
+          <div class="element"><img src="LaxmiBomb.jpg" class="element"></div>
+          <div class="element"><img src="khuda.jpg" class="element"></div>
+          <div class="element"><img src="war.jpg" class="element"></div>
+          <div class="element"><img src="mission.jpg" class="element"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="list">
+          <div class="element"><img src="chichor.jpg" class="element"></div>
+          <div class="element"><img src="radhe.jpg" class="element"></div>
+          <div class="element"><img src="coolie.jpg" class="element"></div>
+          <div class="element"><img src="baaghi.jpg" class="element"></div>
+          <div class="element"><img src="3idiots.jpg" class="element"></div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" id="prev"  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" colo>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" id="next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>
-</div>
+  
 </div>
 </body>
 </html>
