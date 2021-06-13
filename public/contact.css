@@ -1,7 +1,7 @@
 body
 {
    color:white;
-   font-size: 18px;
+   font-size: 16px;
    font-family: comic sans ms;
    background-image:url("background.jfif") ;
    font-weight: bold;
@@ -45,9 +45,9 @@ body
  {
      color: green;
     background-color: yellow;
-    width: 110px;
-    height: 25px;
-    padding: 10px;
+    width: 7.8vw;
+    height: 2.6vw;
+    padding-top: 0.5vw;
     border-radius: 10px;
 }
 .nav i{
