@@ -71,7 +71,8 @@ h1{
     border-radius: 1vw;
 }
 #main{
-    position: relative;
+    position: absolute;
+    width: 100%;
     top:450px;
 }
 .list
