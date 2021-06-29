@@ -2,6 +2,14 @@ var express=require("express");
 var app=express();
 
 app.use(express.static("public"));
+app.get("/verify",(req,res)=>{
+  res.sendFile(__dirname+"\\public\\vercon.html");
+})
+
+app.get("/response",(req,res)=>{
+  res.sendFile(__dirname+"\\public\\response.html");
+})
+
 app.get("/",(req,res)=>{
     res.sendFile(__dirname+"\\public\\project.html");
 })
@@ -25,6 +33,6 @@ app.get("/find",(req,res)=>{
     else 
       res.redirect("project.html");
 })
-app.listen(8000,function(){
+app.listen(4000,function(){
     console.log("Listening to movie port");
 })

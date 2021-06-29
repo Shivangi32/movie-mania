@@ -40,7 +40,7 @@
         <button id="contact"><a href="contact.html">CONTACT US</a></button>
     </div>
         <br>
-  <form class="form" method="post" action="vercon.html" onsubmit="return check()"> 
+  <form class="form" method="get" action="/verify"> 
       <h1>CONTACT US</h1>
       <label for="name">NAME:</label><br>
       <input type="text" id="name" placeholder="First Name" required>&emsp;&emsp;
@@ -49,7 +49,7 @@
       <input type="email" id="email" placeholder="Eg-: abc@gmail.com" required> <br><br>
       <label for="msg">MESSAGE:</label><br>
       <input type="text" id="msg" placeholder="Please enter your comments" id="msg"><br><br>
-      <button onclick="check()">SUBMIT</button>
+      <button type="submit">SUBMIT</button>
   </form>
 </body>
 </html>
