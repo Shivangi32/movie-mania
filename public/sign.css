@@ -30,6 +30,7 @@ body{
     padding: 5px;
     color: black;
     border: green;
+    outline: none;
     border-radius: 5px;
 }
 .box button

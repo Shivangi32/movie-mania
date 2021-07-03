@@ -1,9 +1,10 @@
 
 
 var email=document.getElementById("e");
+var password=document.getElementById("p");
 
 email.addEventListener('textInput',checkemail);
-document.getElementById("p").addEventListener('textInput',checkpass);
+password.addEventListener('textInput',checkpass);
 
 function validate()
 {
@@ -18,6 +19,7 @@ function checkemail()
     {
         document.getElementById("check").style.visibility = "hidden";
         document.getElementById("error").innerHTML="This field can't be empty!!"
+        email.style.border="1px solid red";
         document.getElementById("error").style.visibility = "visible";
         document.getElementById("exclamation").style.visibility = "visible";
         return false;
@@ -29,6 +31,8 @@ function checkemail()
         document.getElementById("exclamation").style.visibility = "hidden";
         if(em.indexOf("@")==-1)
           {
+            email.style.border="1px solid red";
+            email.focus();
             document.getElementById("error").innerHTML="Wrong Email Address!!";
             document.getElementById("error").style.visibility = "visible";
             document.getElementById("exclamation").style.visibility = "visible";
@@ -37,6 +41,7 @@ function checkemail()
         else
           {
             document.getElementById("check").style.visibility = "visible";
+            email.style.border="1px solid green";
             return true;
           }
           
@@ -50,6 +55,7 @@ function checkemail()
         document.getElementById("errorp").style.color="red";
         document.getElementById("errorp").style.visibility = "hidden";
         document.getElementById("checkp").style.visibility = "hidden";
+        password.style.border="1px solid red";
         if(pass=="" || pass==null)
           {
              document.getElementById("errorp").innerHTML="This field can't be empty!!";
@@ -67,6 +73,7 @@ function checkemail()
     {
         document.getElementById("exclamationp").style.visibility = "hidden";
         document.getElementById("checkp").style.visibility = "visible";
+        password.style.border="1px solid green";
         document.getElementById("errorp").style.visibility = "hidden";
         var c=0;
         for(var i=0;i<pass.length;i++)
