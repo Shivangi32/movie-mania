@@ -5,10 +5,10 @@
 </head>
 <body>
     <a href="project.html"><img src="logo.jpg" class="logo"></a>
-    <div class="box">
+    <form class="box" onsubmit="return validate()" action="project.html" method="post">
         <h2>Sign In</h2><br>
         <div class="control">
-            <input type="text" placeholder="Email or Phone number" id="e">
+            <input type="text" autocomplete="off" placeholder="Email or Phone number" id="e">
             <i class="fa fa-check-circle" id="check"></i>
             <i class="fa fa-exclamation-circle" id="exclamation"></i>
            <small id="error"></small>
@@ -23,7 +23,7 @@
         <br><br>
         <a href="">Forgot Password?</a>
         <br><br>
-        <button onclick="check()">Sign In</button>
+        <button type="submit">Sign In</button>
         <br><br>
         <font size="4px">
             By continuing, you agree to Movie <br>Mania's Terms and Conditions of Use and Privacy Policy.
@@ -37,7 +37,7 @@
         
         New to Movie Mania?
         <a href="join.html"><font color=rgb(0, 102, 255)>Sign up now</font></a>
-    </div>
+    </form>
     <script src="sign.js"></script>
 
 </body>

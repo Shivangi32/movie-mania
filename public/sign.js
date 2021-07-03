@@ -1,15 +1,26 @@
 
 
-function check()
+var email=document.getElementById("e");
+
+email.addEventListener('textInput',checkemail);
+document.getElementById("p").addEventListener('textInput',checkpass);
+
+function validate()
+{
+  if(checkemail()==true && checkpass()==true)
+    return true;
+  return false;
+}
+function checkemail()
 {
   var em=document.getElementById("e").value;
-  var pass=document.getElementById("p").value;
     if(em==""|| em==null)
     {
         document.getElementById("check").style.visibility = "hidden";
         document.getElementById("error").innerHTML="This field can't be empty!!"
         document.getElementById("error").style.visibility = "visible";
         document.getElementById("exclamation").style.visibility = "visible";
+        return false;
     }
     else
     {
@@ -21,10 +32,19 @@ function check()
             document.getElementById("error").innerHTML="Wrong Email Address!!";
             document.getElementById("error").style.visibility = "visible";
             document.getElementById("exclamation").style.visibility = "visible";
+            return false;
           }
         else
-          document.getElementById("check").style.visibility = "visible";
+          {
+            document.getElementById("check").style.visibility = "visible";
+            return true;
+          }
+          
     }
+  }
+  function checkpass()
+  {
+    var pass=document.getElementById("p").value;
     if(pass=="" || pass==null || pass.length<8)
     {
         document.getElementById("errorp").style.color="red";
@@ -41,6 +61,7 @@ function check()
             document.getElementById("errorp").style.visibility = "visible";
           }
         document.getElementById("exclamationp").style.visibility = "visible";
+        return false;
     }
     else
     {
@@ -65,6 +86,6 @@ function check()
             document.getElementById("errorp").style.color="green";
             document.getElementById("errorp").style.visibility = "visible";
           }
-        
+        return true;
     }
 }
