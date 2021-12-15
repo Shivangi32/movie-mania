@@ -14,6 +14,10 @@ app.get("/",(req,res)=>{
     res.sendFile(__dirname+"\\public\\project.html");
 })
 
+app.get("/project.html",(req,res)=>{
+  res.sendFile(__dirname+"\\public\\project.html");
+})
+
 var list=["saina","end game","conjuring","dear comrade"];
 app.get("/find",(req,res)=>{
     var movie=req.query.search;
